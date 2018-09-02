@@ -6,7 +6,7 @@ We can use this Argument Captor when we need to know and validate the object tha
 
 Initialization the captured object:
 ```
-		ArgumentCaptor<Bill> billcaptured = ArgumentCaptor.forClass(Bill.class);
+    ArgumentCaptor<Bill> billcaptured = ArgumentCaptor.forClass(Bill.class);
 ```
 The moment that is captured the argument in our example:
 ```
