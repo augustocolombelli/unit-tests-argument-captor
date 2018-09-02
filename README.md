@@ -12,6 +12,10 @@ The moment that is captured the argument in our example:
 ```
     Mockito.verify(billEmailService).sendBillByEmail(billcaptured.capture());
 ```
+Comparing the expected with the captured value:
+```
+    Assert.assertEquals(valueExpectedAfterApplyTheRule, billcaptured.getValue().getQuantity());
+```
 
 #### What is necessary for to use this resource?
 In this example, its used junit-4.10.jar and mockito-all-1.10.19. 
