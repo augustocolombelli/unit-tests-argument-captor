@@ -1,6 +1,8 @@
-# design-pattern-strategy
-Simple example using Strategy Design Pattern
+### Unit Tests - Argument Captor
+Simple example using the resource of Mockito Argument Captor
 
-# How can we use this Design Pattern?
-We can use this Design Pattern when part of your algoritmin respect a specific business rule. In our example, we have two steps in the execution, calculate and print the result. Print the result is common, but the calculate is specifically.
+#### How can we use this resource?
+We can use this Argument Captor when we need to know and validate the object that is used in some method. It is very useful when we know the scenario and the result, but the algorithm is complex.
 
+#### What is necessary for to use this resource?
+In this example, its used junit-4.10.jar and mockito-all-1.10.19. 
