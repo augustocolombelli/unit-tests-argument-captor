@@ -1,9 +1,9 @@
 package project;
 
-import static junit.framework.Assert.assertEquals;
 import static org.mockito.ArgumentCaptor.forClass;
 import static org.mockito.Mockito.verify;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,7 +39,7 @@ public class BillServiceTest {
 
 		verify(billEmailService).sendBillByEmail(billcaptured.capture());
 
-		assertEquals(valueExpectedAfterApplyTheRule, billcaptured.getValue().getQuantity());
+		Assert.assertEquals(valueExpectedAfterApplyTheRule, billcaptured.getValue().getQuantity());
 	}
 
 }
